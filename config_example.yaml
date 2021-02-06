@@ -1,0 +1,22 @@
+# This is only an example configuration file, and should be customised to suit your needs.
+# Place this file at /etc/homepresenced/homepresenced.yaml.
+
+
+# The amount of consecutive time that an address must be absent from scans for the occupant to be marked as absent.
+presence_grace_period: 15 
+
+# The dweet.io identifer that your machine will send data to. THIS MUST BE CHANGED, or you will end up with the same data stream as everyone else.
+dweet_thing: YOUR_IDENTIFIER_HERE
+
+# The format in which datetimestamps will be formatted.
+time_format: "%Y/%m/%d at %HL%M:%S"
+
+
+# List of occupants in your house, with each entry containing both 'name' and 'mac' fields.
+occupants:
+    - name: User One
+      mac:  11:aa:11:aa:11:aa
+    - name: User Two
+      mac: 22:bb:22:bb:22:bb
+    - name: User Three
+      mac: 33:cc:33:cc:33:9cc
